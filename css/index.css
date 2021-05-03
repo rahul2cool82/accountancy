@@ -299,7 +299,7 @@ li {
 
 .process {
   padding: 5vw;
-  background-image: url(./../../images/b4.jpg);
+  background-image: url(./../images/b4.jpg);
   background-repeat: repeat;
   background-position: 0 0; }
   .process__header {
