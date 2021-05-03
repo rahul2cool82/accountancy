@@ -1,0 +1,58 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $font--lato;
+}
+
+html{
+    font-size: 62.5%;
+
+    @media only screen and ( max-width : 75em ){
+        font-size: 59.375%;
+    }
+
+    @media only screen and ( max-width : 64em ){
+        font-size: 56.25%;
+    }
+
+    @media only screen and ( max-width : 48em ){
+        font-size: 50%;
+    }
+
+    @media only screen and ( max-width : 28.125em ){
+        font-size: 43.75%;
+    }
+
+}
+
+body{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $font--playfair;
+}
+
+article{
+    font-family: $font--dancing;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    position: relative;
+    display: block;
+    width: 100%;
+}
