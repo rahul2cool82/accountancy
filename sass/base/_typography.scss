@@ -30,10 +30,23 @@
 
     background-image: linear-gradient(180deg, #f7faff 0% , #f7faff var(--point), #fff var(--point), #fff 100%);
     width: 100%;
+
+    @media only screen and ( max-width: 48em ){
+        padding: 2rem;
+        --point: 100%;
+    }
+
     &__imageBox{
         height: 15rem;
         width: 15rem;
         margin-right: 2rem;
+
+        @media only screen and ( max-width: 48em ){
+            margin-right: auto;
+            height: 10rem;
+            width: 10rem;
+        }
+
         & img{
             height: 100%;
             width: 100%;
@@ -45,6 +58,11 @@
         display:flex;
         flex-direction: column;
         height: 15rem;
+
+        @media only screen and ( max-width: 48em ){
+            height: auto;
+        }
+
         &--header{
             display: flex;
             align-items: center;
@@ -64,6 +82,11 @@
             display: flex;
             justify-content: flex-end;
             flex-grow: 1;
+
+            @media only screen and ( max-width: 48em ){
+                display: none;
+            }
+
             & a{
                 height: 100%;
                 margin-left: 3rem;
@@ -215,6 +238,13 @@
     width: 100%;
     padding: 10vw;
 
+    @media only screen and ( max-width: 48em ){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     & > *{
         max-width: 45rem;
         width: 100%;
@@ -252,6 +282,15 @@
         line-height: 1.5;
         opacity: 0;
         transform: translateX(3rem);
+
+        @media only screen and ( max-width: 48em ){
+            font-size: 5rem;
+        }
+
+        @media only screen and ( max-width: 28.125em ){
+            font-size: 3rem;
+        }
+
     }
 
     &.select h1{
@@ -306,14 +345,24 @@
 
         display: flex;
 
+        @media only screen and ( max-width: 48em ){
+            flex-direction: column;
+        }
+
         & h4{
             font-size: 2.4rem;
             flex: none;
+            @media only screen and ( max-width: 48em ){
+                margin-bottom: 1.5rem;
+            }
         }
         & article{
             font-size: 2rem;
             margin-left: 3rem;
             line-height: 1.8;
+            @media only screen and ( max-width: 48em ){
+                margin-left: 0;
+            }
         }
     }
     &__cards{
@@ -427,6 +476,7 @@
     flex-wrap: wrap;
     background-image: url(./../images/b1.jpg);
     background-size: cover;
+
     &__left{
         flex-grow: 1;
         color: #fff;
@@ -554,6 +604,7 @@
         width: 100%;
         display: flex;
         align-items: center;
+
         &--left{
             margin: 1rem 0;
             & h4{
@@ -570,6 +621,11 @@
             flex-grow: 1;
             padding: 0 2rem;
             margin: 1rem 0;
+
+            @media only screen and ( max-width: 48em ){
+                display: none;
+            }
+
             & p{
                 font-size: 1.6rem;
                 text-align: center;
@@ -580,6 +636,11 @@
             padding: .5rem 1rem;
             border: 2px solid var(--color--primary--blue);
             margin: 1rem 0;
+
+            @media only screen and ( max-width: 48em ){
+                display: none;
+            }
+
             & h4{
                 font-size: 3rem;
             }
@@ -753,6 +814,11 @@
         flex: 0 0 60rem;
         position: relative;
         padding: 0 3rem;
+        @media only screen and ( max-width: 48em ){
+            flex: 0 0 100%;
+            padding: 3rem;
+            text-align: left;
+        }
         & h1{
             font-size: 4rem;
             & u{
@@ -772,6 +838,16 @@
         grid-template-columns: repeat(2,1fr);
         grid-gap: 1.5rem;
 
+        @media only screen and ( max-width: 48em ){
+            flex: 0 0 100%;
+            padding: 3rem;
+            padding-top: 0;
+        }
+
+        @media only screen and ( max-width: 28.125em ){
+            grid-template-columns: 1fr;
+        }
+
         & select{
             width: 100%;
             padding: 1rem;
@@ -786,6 +862,12 @@
             padding-top: .75rem;
             padding-bottom: .75rem;
             cursor: pointer;
+            
+        @media only screen and ( max-width: 28.125em ){
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
         }
 
         & select, & input, & button{
@@ -860,10 +942,12 @@
 
         & p{
             margin-right: .5rem;
+            display: inline;
         }
 
         & a{
             color: yellow;
+            display: inline;
         }
 
     }

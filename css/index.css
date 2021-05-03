@@ -71,10 +71,19 @@ li {
   --point: 60%;
   background-image: linear-gradient(180deg, #f7faff 0%, #f7faff var(--point), #fff var(--point), #fff 100%);
   width: 100%; }
+  @media only screen and (max-width: 48em) {
+    .menu {
+      padding: 2rem;
+      --point: 100%; } }
   .menu__imageBox {
     height: 15rem;
     width: 15rem;
     margin-right: 2rem; }
+    @media only screen and (max-width: 48em) {
+      .menu__imageBox {
+        margin-right: auto;
+        height: 10rem;
+        width: 10rem; } }
     .menu__imageBox img {
       height: 100%;
       width: 100%;
@@ -84,6 +93,9 @@ li {
     display: flex;
     flex-direction: column;
     height: 15rem; }
+    @media only screen and (max-width: 48em) {
+      .menu__container {
+        height: auto; } }
     .menu__container--header {
       display: flex;
       align-items: center;
@@ -98,6 +110,9 @@ li {
       display: flex;
       justify-content: flex-end;
       flex-grow: 1; }
+      @media only screen and (max-width: 48em) {
+        .menu__container--footer {
+          display: none; } }
       .menu__container--footer a {
         height: 100%;
         margin-left: 3rem;
@@ -213,6 +228,12 @@ li {
   height: 100%;
   width: 100%;
   padding: 10vw; }
+  @media only screen and (max-width: 48em) {
+    .slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
   .slide > * {
     max-width: 45rem;
     width: 100%;
@@ -242,6 +263,12 @@ li {
     line-height: 1.5;
     opacity: 0;
     transform: translateX(3rem); }
+    @media only screen and (max-width: 48em) {
+      .slide h1 {
+        font-size: 5rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .slide h1 {
+        font-size: 3rem; } }
   .slide.select h1 {
     transform: translateX(0);
     opacity: 1; }
@@ -277,13 +304,22 @@ li {
   background-position: 0 0; }
   .process__header {
     display: flex; }
+    @media only screen and (max-width: 48em) {
+      .process__header {
+        flex-direction: column; } }
     .process__header h4 {
       font-size: 2.4rem;
       flex: none; }
+      @media only screen and (max-width: 48em) {
+        .process__header h4 {
+          margin-bottom: 1.5rem; } }
     .process__header article {
       font-size: 2rem;
       margin-left: 3rem;
       line-height: 1.8; }
+      @media only screen and (max-width: 48em) {
+        .process__header article {
+          margin-left: 0; } }
   .process__cards {
     margin-top: 2rem;
     width: 100%;
@@ -475,6 +511,9 @@ li {
       flex-grow: 1;
       padding: 0 2rem;
       margin: 1rem 0; }
+      @media only screen and (max-width: 48em) {
+        .testimonials__header--center {
+          display: none; } }
       .testimonials__header--center p {
         font-size: 1.6rem;
         text-align: center; }
@@ -483,6 +522,9 @@ li {
       padding: .5rem 1rem;
       border: 2px solid var(--color--primary--blue);
       margin: 1rem 0; }
+      @media only screen and (max-width: 48em) {
+        .testimonials__header--right {
+          display: none; } }
       .testimonials__header--right h4 {
         font-size: 3rem; }
       .testimonials__header--right p {
@@ -620,6 +662,11 @@ li {
     flex: 0 0 60rem;
     position: relative;
     padding: 0 3rem; }
+    @media only screen and (max-width: 48em) {
+      .callback__contentBox {
+        flex: 0 0 100%;
+        padding: 3rem;
+        text-align: left; } }
     .callback__contentBox h1 {
       font-size: 4rem; }
       .callback__contentBox h1 u {
@@ -633,6 +680,14 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem; }
+    @media only screen and (max-width: 48em) {
+      .callback__form {
+        flex: 0 0 100%;
+        padding: 3rem;
+        padding-top: 0; } }
+    @media only screen and (max-width: 28.125em) {
+      .callback__form {
+        grid-template-columns: 1fr; } }
     .callback__form select {
       width: 100%;
       padding: 1rem; }
@@ -642,6 +697,10 @@ li {
       padding-top: .75rem;
       padding-bottom: .75rem;
       cursor: pointer; }
+      @media only screen and (max-width: 28.125em) {
+        .callback__form button {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem; } }
     .callback__form select, .callback__form input, .callback__form button {
       outline: none;
       border: 0;
@@ -694,9 +753,11 @@ li {
     align-items: center;
     justify-content: center; }
     .footer__copyrights p {
-      margin-right: .5rem; }
+      margin-right: .5rem;
+      display: inline; }
     .footer__copyrights a {
-      color: yellow; }
+      color: yellow;
+      display: inline; }
 
 @keyframes select-left {
   0% {
