@@ -1,5 +1,12 @@
+var securityTimeout;
+
 const securitySlideshow = () => {
     const container = document.querySelector('.security__slideshow--container');
+
+    if ( !container ){
+        return;
+    }
+
     const child = container.children[0];
     container.style = `left: -21rem;`;
 
@@ -11,11 +18,13 @@ const securitySlideshow = () => {
         }, 301
     );
 
-    setTimeout(
+    securityTimeout = setTimeout(
         () => {
             securitySlideshow();
         }, 2000
     );
 }
 
-securitySlideshow();
+const closeSecuritySlideshow = () => {
+    clearTimeout( securityTimeout );
+}

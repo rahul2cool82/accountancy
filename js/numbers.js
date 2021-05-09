@@ -1,5 +1,11 @@
-const numberScroll = () => {
+var numberScrolling;
+const numbers = () => {
     const numbers = document.querySelectorAll('.number');
+
+    if ( numbers.length === 0 ){
+        return;
+    }
+
     const values = [];
 
     Array.from( numbers ).forEach( (dom) => {
@@ -12,7 +18,7 @@ const numberScroll = () => {
         const delay = 50;
         let current = 0;
 
-        const flag = value / 200;
+        const flag = value / 100;
 
         const timeInterval = setInterval(
             () => {
@@ -27,10 +33,10 @@ const numberScroll = () => {
         );
     }
 
-    window.addEventListener( 'scroll', function(){
+    window.addEventListener( 'scroll', numberScrolling = () => {
         Array.from( numbers ).forEach( (dom, index) => {
             if ( !dom.classList.contains( 'select' ) ){
-                const breakLogic = dom.getBoundingClientRect().top - window.innerHeight + dom.getBoundingClientRect().height;
+                const breakLogic = dom.getBoundingClientRect().top - window.innerHeight + dom.getBoundingClientRect().height - 100;
                 if ( breakLogic < 0 && breakLogic > (-1 * dom.getBoundingClientRect().height) ){
                     dom.classList.add( 'select' );
                     startCounting( dom, values[index] );
@@ -41,4 +47,17 @@ const numberScroll = () => {
     } );
 }
 
-numberScroll();
+
+const closeNumberScroll = () => {
+
+    const numbers = document.querySelectorAll('.number');
+    if ( numbers.length === 0 ){
+        return;
+    }
+
+    Array.from( numbers ).forEach( (dom) => {
+        dom.classList.remove( 'select' );
+    } );
+
+    window.removeEventListener( 'scroll', numberScrolling );
+}

@@ -76,6 +76,13 @@
                 }
             }
 
+            & .big-button{
+                @media only screen and ( max-width: 28.125em ){
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
+                }
+            }
+
         }
         &--footer{
             width: 100%;
@@ -95,12 +102,75 @@
                 font-weight: bold;
                 padding-top: 1.5rem;
                 transition: .3s;
+                position: relative;
+
+                &.select{
+                    color: var(--color--primary--blue);
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 3px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 50%;
+                        height: 5px;
+                        background-color: yellow;
+                    }
+                }
+
                 &:hover{
                     color: var(--color--primary--blue);
                 }
             }
         }
     }
+
+    &__burger{
+        height: 4rem;
+        width: 4rem;
+        cursor: pointer;
+        display: none;
+        position: relative;
+        margin-left: 2rem;
+        @media only screen and ( max-width: 48em ){
+            display: block;
+        }
+        & span{
+            height: 2px;
+            width: 100%;
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            transform: translateY(-1px);
+            transition: .3s;
+            transform-origin: top left;
+            backface-visibility: hidden;
+            &:first-child{
+                top: 30%;
+            }
+            &:nth-child(2){
+                top: 50%;
+            }
+            &:last-child{
+                top: 70%;
+            }
+        }
+
+        &.select span{
+            &:first-child{
+                top: 15%;
+                transform: translateY(-1px) rotateZ(42.5deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:last-child{
+                top: 85%;
+                transform: translateY(-1px) rotateZ(-47.5deg);
+            }
+        }
+    }
+
 }
 
 .infoBox{
@@ -758,6 +828,13 @@
     background-image: url(./../images/b1.jpg);
     background-size: cover;
     color: #fff;
+
+    &.white{
+        background-image: unset;
+        background: #fff;
+        color: #000;
+    }
+
     &__header{
         text-align: center;
         margin-bottom: 4rem;

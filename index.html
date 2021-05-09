@@ -8,496 +8,534 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+     <!--[if lt IE 9]> 
+    <script> document.createElement("app"); </script>
+    <![endif]-->
+    <script src='https://cdn.jsdelivr.net/gh/colxi/getEventListeners/src/getEventListeners.min.js'></script>
+    <script>
+        const getAllEventListeners = ( dom ) => {
+            return dom.eventListenerList;
+        }
+    </script>
 </head>
-<body>
-    <!--    ################################    HEADER      ######################################-->
-    <div class="container">
-        <header class="header">
-            <img src="./images/verified.png" alt="">
-            <p>ISO 9001-2015 CERTIFIED SECURITY & PSARA CONSULTANT</p>
-        </header>
+<body style="overflow: hidden;">
+    <div class="loader select">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
     </div>
-    <!--    ################################    MENU        ######################################-->
-    <div class="container">
-        <div class="menu">
-            <div class="menu__imageBox">
-                <img src="./images/logo.png" alt="">
+    <app>
+        <!--    ################################    HEADER      ######################################-->
+        <div class="container">
+            <header class="header">
+                <img src="./images/verified.png" alt="">
+                <p>ISO 9001-2015 CERTIFIED SECURITY & PSARA CONSULTANT</p>
+            </header>
+        </div>
+        <!--    ################################    MENU        ######################################-->
+        <div class="container">
+            <div class="menu">
+                <a href="#" class="menu__imageBox">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <div class="menu__container">
+                    <header class="menu__container--header">
+                        <div class="infoBox">
+                            <div class="infoBox__imageBox">
+                                <svg>
+                                    <use href="./svg/sprite.svg#icon-phone-call"></use>
+                                </svg>
+                            </div>
+                            <div class="infoBox__info">
+                                <h4>0124-4526577</h4>
+                                <p>Any quries? Call us.</p>
+                            </div>
+                        </div>
+                        <div class="infoBox">
+                            <div class="infoBox__imageBox">
+                                <svg>
+                                    <use href="./svg/sprite.svg#icon-map"></use>
+                                </svg>
+                            </div>
+                            <div class="infoBox__info">
+                                <h4>SECURE INDIA INFINITY SOLUTIONS</h4>
+                                <p>301/18, Civil Lines, Gurgaon, Haryana .</p>
+                            </div>
+                        </div>
+                        <a href="#" class="big-button" download="Broachure.pdf">Download Broachure</a>
+                    </header>
+                    <footer class="menu__container--footer">
+                        <a href="./about.html">ABOUT</a>
+                        <a href="#">PSARA CONSULTANCY</a>
+                        <a href="#">INVESTIGATIONS WING</a>
+                        <a href="#">FACILITY MANAGEMENT</a>
+                        <a href="#">CONTACT US</a>
+                    </footer>
+                </div>
+                <div class="menu__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div class="menu__container">
-                <header class="menu__container--header">
-                    <div class="infoBox">
-                        <div class="infoBox__imageBox">
-                            <svg>
-                                <use href="./svg/sprite.svg#icon-phone-call"></use>
-                            </svg>
-                        </div>
-                        <div class="infoBox__info">
-                            <h4>0124-4526577</h4>
-                            <p>Any quries? Call us.</p>
+        </div>
+        <!--    ######################################      MOBILE NAVIGATION      ##############################################     -->
+        <div class="container">
+            <div class="mobnav">
+                <div class="mobnav__container">
+                    <a href="#" class="mobnav__item">HOME</a>
+                    <a href="about.html" class="mobnav__item">ABOUT</a>
+                    <a href="#" class="mobnav__item">PSARA CONSULTANCY</a>
+                    <a href="#" class="mobnav__item">INVESTIGATIONS WING</a>
+                    <a href="#" class="mobnav__item">FACILITY MANAGEMENT</a>
+                    <a href="#" class="mobnav__item">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <!--    ################################    SLIDESHOW        ######################################-->
+        <div class="container">
+            <div class="slideshow">
+                <div class="slideshow__images">
+                    <img src="./images/slide1.jpg" alt="" class="slideImage select">
+                    <img src="./images/slide2.jpg" alt="" class="slideImage left">
+                    <img src="./images/slide3.jpg" alt="" class="slideImage right">
+                </div>
+                <div class="slideshow__slides">
+                    <div class="slide select">
+                        <p>
+                            Security Services
+                        </p>
+                        <h1>
+                            PSARA LICENSE IN 45 DAYS 1
+                        </h1>
+                        <article>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi eum maiores voluptatibus officia nam architecto dolore voluptates aspernatur quas facere debitis a, itaque delectus?
+                        </article>
+                        <div class="slide__buttonBox">
+                            <a href="#" class="button">Get a quote</a>
+                            <a href="#" class="button">Contact us</a>
                         </div>
                     </div>
-                    <div class="infoBox">
-                        <div class="infoBox__imageBox">
-                            <svg>
-                                <use href="./svg/sprite.svg#icon-map"></use>
-                            </svg>
-                        </div>
-                        <div class="infoBox__info">
-                            <h4>SECURE INDIA INFINITY SOLUTIONS</h4>
-                            <p>301/18, Civil Lines, Gurgaon, Haryana .</p>
+                    <div class="slide left">
+                        <p>
+                            Security Services
+                        </p>
+                        <h1>
+                            PSARA LICENSE IN 45 DAYS 2
+                        </h1>
+                        <article>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi eum maiores voluptatibus officia nam architecto dolore voluptates aspernatur quas facere debitis a, itaque delectus?
+                        </article>
+                        <div class="slide__buttonBox">
+                            <a href="#" class="button">Get a quote</a>
+                            <a href="#" class="button">Contact us</a>
                         </div>
                     </div>
-                    <a href="#" class="big-button" download="Broachure.pdf">Download Broachure</a>
+                    <div class="slide right">
+                        <p>
+                            Security Services
+                        </p>
+                        <h1>
+                            PSARA LICENSE IN 45 DAYS 3
+                        </h1>
+                        <article>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi eum maiores voluptatibus officia nam architecto dolore voluptates aspernatur quas facere debitis a, itaque delectus?
+                        </article>
+                        <div class="slide__buttonBox">
+                            <a href="#" class="button">Get a quote</a>
+                            <a href="#" class="button">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow__buttons">
+                    <div class="slideshow__buttons--button select"></div>
+                    <div class="slideshow__buttons--button"></div>
+                    <div class="slideshow__buttons--button"></div>
+                </div>
+            </div>
+        </div>
+        <!--    ################################    PROCESS        ######################################-->
+        <div class="container">
+            <div class="process">
+                <header class="process__header">
+                    <h4>
+                        `` PSARA Consultancy Process ``
+                    </h4>
+                    <article>
+                        We Commit to offer reliable, cost effective &integrated solutions for all PSARA License requirements under single roof. Our 20 years of Consultancy expertise assist our clients to get the PSARA License in the minimum time across all states of India.
+                    </article>
                 </header>
-                <footer class="menu__container--footer">
-                    <a href="#">ABOUT</a>
-                    <a href="#">PSARA CONSULTANCY</a>
-                    <a href="#">INVESTIGATIONS WING</a>
-                    <a href="#">FACILITY MANAGEMENT</a>
-                    <a href="#">CONTACT US</a>
-                </footer>
+                <div class="process__cards">
+
+                    <div class="processCard">
+                        <header class="processCard__header">
+                            <img src="./images/process1.png" alt="">
+                        </header>
+                        <footer class="processCard__footer">
+                            <p>Documentation.</p>
+                            <p>Govt. Registrations.</p>
+                            <p>Commercial Office Setup.</p>
+                        </footer>
+                    </div>
+
+                    <div class="processCard">
+                        <header class="processCard__header">
+                            <img src="./images/process2.png" alt="">
+                        </header>
+                        <footer class="processCard__footer">
+                            <p>Documentation.</p>
+                            <p>Govt. Registrations.</p>
+                            <p>Commercial Office Setup.</p>
+                        </footer>
+                    </div>
+
+                    <div class="processCard">
+                        <header class="processCard__header">
+                            <img src="./images/process3.png" alt="">
+                        </header>
+                        <footer class="processCard__footer">
+                            <p>Documentation.</p>
+                            <p>Govt. Registrations.</p>
+                            <p>Commercial Office Setup.</p>
+                        </footer>
+                    </div>
+
+                    <div class="processCard">
+                        <header class="processCard__header">
+                            <img src="./images/process4.png" alt="">
+                        </header>
+                        <footer class="processCard__footer">
+                            <p>Documentation.</p>
+                            <p>Govt. Registrations.</p>
+                            <p>Commercial Office Setup.</p>
+                        </footer>
+                    </div>
+
+                    <div class="processCard">
+                        <header class="processCard__header">
+                            <img src="./images/process5.png" alt="">
+                        </header>
+                        <footer class="processCard__footer">
+                            <p>Documentation.</p>
+                            <p>Govt. Registrations.</p>
+                            <p>Commercial Office Setup.</p>
+                        </footer>
+                    </div>
+
+                    <div class="processCard">
+                        <header class="processCard__header">
+                            <img src="./images/process6.png" alt="">
+                        </header>
+                        <footer class="processCard__footer">
+                            <p>Documentation.</p>
+                            <p>Govt. Registrations.</p>
+                            <p>Commercial Office Setup.</p>
+                        </footer>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!--    ################################    SLIDESHOW        ######################################-->
-    <div class="container">
-        <div class="slideshow">
-            <div class="slideshow__images">
-                <img src="./images/slide1.jpg" alt="" class="slideImage select">
-                <img src="./images/slide2.jpg" alt="" class="slideImage left">
-                <img src="./images/slide3.jpg" alt="" class="slideImage right">
+        <!--    ################################    POLICY        ######################################-->
+        <div class="container">
+            <div class="policy">
+                <div class="policy__left">
+                    <h4><u>PSARA Consultancy</u></h4>
+                    <h4>Payment Policy</h4>
+                    <a href="#" class="button">Get a quote</a>
+                </div>
+                <div class="policy__right">
+                    <ul class="hoverList">
+                        <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
+                        <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
+                        <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
+                        <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
+                        <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
+                    </ul>
+                </div>
             </div>
-            <div class="slideshow__slides">
-                <div class="slide select">
-                    <p>
-                        Security Services
-                    </p>
+        </div>
+        <!--    ################################    SECURITY   ########################################-->
+        <div class="container">
+            <div class="security">
+                <div class="security__slideshow">
+                    <div class="security__slideshow--container">
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-1.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-2.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-3.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-4.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-5.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-6.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-1.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-2.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-3.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-4.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-5.jpg" alt="">
+                        </div>
+                        <div class="security__slideshow--imageBox">
+                            <img src="./images/security-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    ################################    TESTIMONIALS   ########################################-->
+        <div class="container">
+            <div class="testimonials">
+                <header class="testimonials__header">
+                    <div class="testimonials__header--left">
+                        <h4><u>CLIENT</u><br> TESTIMONIALS</h4>
+                    </div>
+                    <div class="testimonials__header--center">
+                        <p>
+                            Our world is at an inflection point, with technology transformingour clients, our profession, and society at large.
+                        </p>
+                    </div>
+                    <div class="testimonials__header--right">
+                        <h4>1200+</h4>
+                        <p>Clients</p>
+                    </div>
+                </header>
+                <div class="testimonials__container">
+                    <div class="testimonials__container--overflowBox">
+                        <div class="testimonials__container--testimonials">
+
+                            <div class="testimonials__container--testimonialBox">
+                                <div class="testimonial">
+                                    <div class="testimonial__imageBox">
+                                        <img src="./images/face.jpg" alt="">
+                                    </div>
+                                    <div class="testimonial__content">
+                                        <h4>Demo Name 1</h4>
+                                        <p>Demo Company pvt. ltd.</p>
+                                        <article>
+                                            Overall it is good Experience. Representatives are very active. They will walk you through each and every process. They will help you with the documentation.I would recommend this Company to grow.
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonials__container--testimonialBox">
+                                <div class="testimonial">
+                                    <div class="testimonial__imageBox">
+                                        <img src="./images/face.jpg" alt="">
+                                    </div>
+                                    <div class="testimonial__content">
+                                        <h4>Demo Name 2</h4>
+                                        <p>Demo Company pvt. ltd.</p>
+                                        <article>
+                                            Overall it is good Experience. Representatives are very active. They will walk you through each and every process. They will help you with the documentation.I would recommend this Company to grow.
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonials__container--testimonialBox">
+                                <div class="testimonial">
+                                    <div class="testimonial__imageBox">
+                                        <img src="./images/face.jpg" alt="">
+                                    </div>
+                                    <div class="testimonial__content">
+                                        <h4>Demo Name 3</h4>
+                                        <p>Demo Company pvt. ltd.</p>
+                                        <article>
+                                            Overall it is good Experience. Representatives are very active. They will walk you through each and every process. They will help you with the documentation.I would recommend this Company to grow.
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonials__container--testimonialBox">
+                                <div class="testimonial">
+                                    <div class="testimonial__imageBox">
+                                        <img src="./images/face.jpg" alt="">
+                                    </div>
+                                    <div class="testimonial__content">
+                                        <h4>Demo Name 4</h4>
+                                        <p>Demo Company pvt. ltd.</p>
+                                        <article>
+                                            Overall it is good Experience. Representatives are very active. They will walk you through each and every process. They will help you with the documentation.I would recommend this Company to grow.
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="testimonials__buttons">
+                        <div class="testimonials__buttons--button left">
+                            <svg><use href="./svg/sprite.svg#icon-chevron-left"></use></svg>
+                        </div>
+                        <div class="testimonials__buttons--button right">
+                            <svg><use href="./svg/sprite.svg#icon-chevron-right"></use></svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--    ################################    NUMBERS   ########################################-->
+        <div class="container">
+            <div class="numbers">
+                <header class="numbers__header">
+                    <h4><u>PSARA License</u> Consultancy Achievements</h4>
+                </header>
+                <div class="numbers__numberBox">
+
+                    <div class="number">
+                        <header class="number__header">
+                            <h1>450</h1><p>+</p>
+                        </header>
+                        <p>Clients Served</p>
+                    </div>
+                    
+                    <div class="number">
+                        <header class="number__header">
+                            <h1>1500</h1><p>+</p>
+                        </header>
+                        <p>Clients Served</p>
+                    </div>
+                    
+                    <div class="number">
+                        <header class="number__header">
+                            <h1>23</h1><p>+</p>
+                        </header>
+                        <p>Clients Served</p>
+                    </div>
+                    
+                    <div class="number">
+                        <header class="number__header">
+                            <h1>20</h1><p>+</p>
+                        </header>
+                        <p>Clients Served</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--    ################################    CALLBACK   ########################################-->
+        <div class="container">
+            <div class="callback">
+                <div class="callback__contentBox">
+                    <h1>REQUEST A <u>CALL BACK</u></h1>
+                    <p>Thank you for your interest in Secure India Infinity Solutions.</p>
+                    <p>Please submit your details for the instant customer support.</p>
+                </div>
+                <form action="#" class="callback__form">
+                    <select name="subject" required>
+                        <option value="">Subject</option>
+                        <option value="Select Subject 1">Select Subject 1</option>
+                    </select>
+                    <input type="text" name="name" placeholder="First Name*" required>
+                    <input type="number" name="number" placeholder="Enter Number*" required>
+                    <button type="submit" class="button">Send Now</button>
+                </form>
+            </div>
+        </div>
+        <!--    ################################    FOOTER   ########################################-->
+        <div class="container">
+            <footer class="footer">
+
+                <div class="footer__column">
                     <h1>
-                        PSARA LICENSE IN 45 DAYS 1
+                        SECURE INDIA INFINITY SOLUTIONS
                     </h1>
-                    <article>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi eum maiores voluptatibus officia nam architecto dolore voluptates aspernatur quas facere debitis a, itaque delectus?
-                    </article>
-                    <div class="slide__buttonBox">
-                        <a href="#" class="button">Get a quote</a>
-                        <a href="#" class="button">Contact us</a>
-                    </div>
-                </div>
-                <div class="slide left">
                     <p>
-                        Security Services
+                        We Provide Professional PSARA License Consultancy in Delhi , Uttar Pradesh, Haryana, Punjab, Uttarakhand, Rajasthan, Himachal Pradesh, Chandigarh, Madhya Pradesh and in other States of India as well.
                     </p>
+                </div>
+
+                <div class="footer__column">
                     <h1>
-                        PSARA LICENSE IN 45 DAYS 2
+                        Useful Links
                     </h1>
-                    <article>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi eum maiores voluptatibus officia nam architecto dolore voluptates aspernatur quas facere debitis a, itaque delectus?
-                    </article>
-                    <div class="slide__buttonBox">
-                        <a href="#" class="button">Get a quote</a>
-                        <a href="#" class="button">Contact us</a>
-                    </div>
+                    <ul>
+                        <li><a href="./about.html">ABOUT SECURE</a></li>
+                        <li><a href="#">INVESTIGATIONS WING</a></li>
+                        <li><a href="#">SECURITY SERVICES</a></li>
+                        <li><a href="#">FACILITY MANAGEMENT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
                 </div>
-                <div class="slide right">
-                    <p>
-                        Security Services
-                    </p>
+
+                <div class="footer__column">
                     <h1>
-                        PSARA LICENSE IN 45 DAYS 3
+                        PSARA CONSULTANCY
                     </h1>
-                    <article>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi eum maiores voluptatibus officia nam architecto dolore voluptates aspernatur quas facere debitis a, itaque delectus?
-                    </article>
-                    <div class="slide__buttonBox">
-                        <a href="#" class="button">Get a quote</a>
-                        <a href="#" class="button">Contact us</a>
+                    <ul>
+                        <li><a href="#">PSARA Act 2005</a></li>
+                        <li><a href="#">PSARA Clients</a></li>
+                        <li><a href="#">PSARA LICENSE APPLICATION</a></li>
+                        <li><a href="#">Registration & Certifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-map"></use></svg>
+                        <p>301/18, Civil Lines, Gurgaon, Haryana - 122001</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-mail"></use></svg>
+                        <p>write2ranarahul@gmail.com</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-globe"></use></svg>
+                        <p>www.moww.in</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-phone-call"></use></svg>
+                        <p>0124-4526577 | 8448818668</p>
                     </div>
                 </div>
-            </div>
-            <div class="slideshow__buttons">
-                <div class="slideshow__buttons--button select"></div>
-                <div class="slideshow__buttons--button"></div>
-                <div class="slideshow__buttons--button"></div>
-            </div>
+
+                <div class="footer__copyrights">
+                    <p>&copy; All rights reserved to Company Name. Website designed & developed by <a href="https://moww.in">Moww In.</a></p>
+                </div>
+
+            </footer>
         </div>
-    </div>
-    <!--    ################################    PROCESS        ######################################-->
-    <div class="container">
-        <div class="process">
-            <header class="process__header">
-                <h4>
-                    `` PSARA Consultancy Process ``
-                </h4>
-                <article>
-                    We Commit to offer reliable, cost effective &integrated solutions for all PSARA License requirements under single roof. Our 20 years of Consultancy expertise assist our clients to get the PSARA License in the minimum time across all states of India.
-                </article>
-            </header>
-            <div class="process__cards">
-
-                <div class="processCard">
-                    <header class="processCard__header">
-                        <img src="./images/process1.png" alt="">
-                    </header>
-                    <footer class="processCard__footer">
-                        <p>Documentation.</p>
-                        <p>Govt. Registrations.</p>
-                        <p>Commercial Office Setup.</p>
-                    </footer>
-                </div>
-
-                <div class="processCard">
-                    <header class="processCard__header">
-                        <img src="./images/process2.png" alt="">
-                    </header>
-                    <footer class="processCard__footer">
-                        <p>Documentation.</p>
-                        <p>Govt. Registrations.</p>
-                        <p>Commercial Office Setup.</p>
-                    </footer>
-                </div>
-
-                <div class="processCard">
-                    <header class="processCard__header">
-                        <img src="./images/process3.png" alt="">
-                    </header>
-                    <footer class="processCard__footer">
-                        <p>Documentation.</p>
-                        <p>Govt. Registrations.</p>
-                        <p>Commercial Office Setup.</p>
-                    </footer>
-                </div>
-
-                <div class="processCard">
-                    <header class="processCard__header">
-                        <img src="./images/process4.png" alt="">
-                    </header>
-                    <footer class="processCard__footer">
-                        <p>Documentation.</p>
-                        <p>Govt. Registrations.</p>
-                        <p>Commercial Office Setup.</p>
-                    </footer>
-                </div>
-
-                <div class="processCard">
-                    <header class="processCard__header">
-                        <img src="./images/process5.png" alt="">
-                    </header>
-                    <footer class="processCard__footer">
-                        <p>Documentation.</p>
-                        <p>Govt. Registrations.</p>
-                        <p>Commercial Office Setup.</p>
-                    </footer>
-                </div>
-
-                <div class="processCard">
-                    <header class="processCard__header">
-                        <img src="./images/process6.png" alt="">
-                    </header>
-                    <footer class="processCard__footer">
-                        <p>Documentation.</p>
-                        <p>Govt. Registrations.</p>
-                        <p>Commercial Office Setup.</p>
-                    </footer>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--    ################################    POLICY        ######################################-->
-    <div class="container">
-        <div class="policy">
-            <div class="policy__left">
-                <h4><u>PSARA Consultancy</u></h4>
-                <h4>Payment Policy</h4>
-                <a href="#" class="button">Get a quote</a>
-            </div>
-            <div class="policy__right">
-                <ul class="hoverList">
-                    <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
-                    <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
-                    <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
-                    <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
-                    <li><i></i><p>MOU Training & Medical - 100% Advance</p></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--    ################################    SECURITY   ########################################-->
-    <div class="container">
-        <div class="security">
-            <div class="security__slideshow">
-                <div class="security__slideshow--container">
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-1.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-2.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-3.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-4.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-5.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-6.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-1.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-2.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-3.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-4.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-5.jpg" alt="">
-                    </div>
-                    <div class="security__slideshow--imageBox">
-                        <img src="./images/security-6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--    ################################    TESTIMONIALS   ########################################-->
-    <div class="container">
-        <div class="testimonials">
-            <header class="testimonials__header">
-                <div class="testimonials__header--left">
-                    <h4><u>CLIENT</u><br> TESTIMONIALS</h4>
-                </div>
-                <div class="testimonials__header--center">
-                    <p>
-                        Our world is at an inflection point, with technology transformingour clients, our profession, and society at large.
-                    </p>
-                </div>
-                <div class="testimonials__header--right">
-                    <h4>1200+</h4>
-                    <p>Clients</p>
-                </div>
-            </header>
-            <div class="testimonials__container">
-                <div class="testimonials__container--overflowBox">
-                    <div class="testimonials__container--testimonials">
-
-                        <div class="testimonials__container--testimonialBox">
-                            <div class="testimonial">
-                                <div class="testimonial__imageBox">
-                                    <img src="./images/face.jpg" alt="">
-                                </div>
-                                <div class="testimonial__content">
-                                    <h4>Demo Name 1</h4>
-                                    <p>Demo Company pvt. ltd.</p>
-                                    <article>
-                                        Overall it is good Experience. Representatives are very active. They will walk you through each and every process. They will help you with the documentation.I would recommend this Company to grow.
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonials__container--testimonialBox">
-                            <div class="testimonial">
-                                <div class="testimonial__imageBox">
-                                    <img src="./images/face.jpg" alt="">
-                                </div>
-                                <div class="testimonial__content">
-                                    <h4>Demo Name 2</h4>
-                                    <p>Demo Company pvt. ltd.</p>
-                                    <article>
-                                        Overall it is good Experience. Representatives are very active. They will walk you through each and every process. They will help you with the documentation.I would recommend this Company to grow.
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonials__container--testimonialBox">
-                            <div class="testimonial">
-                                <div class="testimonial__imageBox">
-                                    <img src="./images/face.jpg" alt="">
-                                </div>
-                                <div class="testimonial__content">
-                                    <h4>Demo Name 3</h4>
-                                    <p>Demo Company pvt. ltd.</p>
-                                    <article>
-                                        Overall it is good Experience. Representatives are very active. They will walk you through each and every process. They will help you with the documentation.I would recommend this Company to grow.
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonials__container--testimonialBox">
-                            <div class="testimonial">
-                                <div class="testimonial__imageBox">
-                                    <img src="./images/face.jpg" alt="">
-                                </div>
-                                <div class="testimonial__content">
-                                    <h4>Demo Name 4</h4>
-                                    <p>Demo Company pvt. ltd.</p>
-                                    <article>
-                                        Overall it is good Experience. Representatives are very active. They will walk you through each and every process. They will help you with the documentation.I would recommend this Company to grow.
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="testimonials__buttons">
-                    <div class="testimonials__buttons--button left">
-                        <svg><use href="./svg/sprite.svg#icon-chevron-left"></use></svg>
-                    </div>
-                    <div class="testimonials__buttons--button right">
-                        <svg><use href="./svg/sprite.svg#icon-chevron-right"></use></svg>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--    ################################    NUMBERS   ########################################-->
-    <div class="container">
-        <div class="numbers">
-            <header class="numbers__header">
-                <h4><u>PSARA License</u> Consultancy Achievements</h4>
-            </header>
-            <div class="numbers__numberBox">
-
-                <div class="number">
-                    <header class="number__header">
-                        <h1>450</h1><p>+</p>
-                    </header>
-                    <p>Clients Served</p>
-                </div>
-                
-                <div class="number">
-                    <header class="number__header">
-                        <h1>1500</h1><p>+</p>
-                    </header>
-                    <p>Clients Served</p>
-                </div>
-                
-                <div class="number">
-                    <header class="number__header">
-                        <h1>23</h1><p>+</p>
-                    </header>
-                    <p>Clients Served</p>
-                </div>
-                
-                <div class="number">
-                    <header class="number__header">
-                        <h1>20</h1><p>+</p>
-                    </header>
-                    <p>Clients Served</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--    ################################    CALLBACK   ########################################-->
-    <div class="container">
-        <div class="callback">
-            <div class="callback__contentBox">
-                <h1>REQUEST A <u>CALL BACK</u></h1>
-                <p>Thank you for your interest in Secure India Infinity Solutions.</p>
-                <p>Please submit your details for the instant customer support.</p>
-            </div>
-            <form action="#" class="callback__form">
-                <select name="subject" required>
-                    <option value="">Subject</option>
-                    <option value="Select Subject 1">Select Subject 1</option>
-                </select>
-                <input type="text" name="name" placeholder="First Name*" required>
-                <input type="number" name="number" placeholder="Enter Number*" required>
-                <button type="submit" class="button">Send Now</button>
-            </form>
-        </div>
-    </div>
-    <!--    ################################    FOOTER   ########################################-->
-    <div class="container">
-        <footer class="footer">
-
-            <div class="footer__column">
-                <h1>
-                    SECURE INDIA INFINITY SOLUTIONS
-                </h1>
-                <p>
-                    We Provide Professional PSARA License Consultancy in Delhi , Uttar Pradesh, Haryana, Punjab, Uttarakhand, Rajasthan, Himachal Pradesh, Chandigarh, Madhya Pradesh and in other States of India as well.
-                </p>
-            </div>
-
-            <div class="footer__column">
-                <h1>
-                    Useful Links
-                </h1>
-                <ul>
-                    <li><a href="#">ABOUT SECURE</a></li>
-                    <li><a href="#">INVESTIGATIONS WING</a></li>
-                    <li><a href="#">SECURITY SERVICES</a></li>
-                    <li><a href="#">FACILITY MANAGEMENT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__column">
-                <h1>
-                    PSARA CONSULTANCY
-                </h1>
-                <ul>
-                    <li><a href="#">PSARA Act 2005</a></li>
-                    <li><a href="#">PSARA Clients</a></li>
-                    <li><a href="#">PSARA LICENSE APPLICATION</a></li>
-                    <li><a href="#">Registration & Certifications</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__column">
-                <h1>
-                    Contact Us
-                </h1>
-                <div class="footer__column--infoBox">
-                    <svg><use href="./svg/sprite.svg#icon-map"></use></svg>
-                    <p>301/18, Civil Lines, Gurgaon, Haryana - 122001</p>
-                </div>
-
-                <div class="footer__column--infoBox">
-                    <svg><use href="./svg/sprite.svg#icon-mail"></use></svg>
-                    <p>write2ranarahul@gmail.com</p>
-                </div>
-
-                <div class="footer__column--infoBox">
-                    <svg><use href="./svg/sprite.svg#icon-globe"></use></svg>
-                    <p>www.moww.in</p>
-                </div>
-
-                <div class="footer__column--infoBox">
-                    <svg><use href="./svg/sprite.svg#icon-phone-call"></use></svg>
-                    <p>0124-4526577 | 8448818668</p>
-                </div>
-            </div>
-
-            <div class="footer__copyrights">
-                <p>&copy; All rights reserved to Company Name. Website designed & developed by <a href="https://moww.in">Moww In.</a></p>
-            </div>
-
-        </footer>
-    </div>
-
-
-
-
+    </app>
 </body>
 <script src="./js/slideshow.js"></script>
 <script src="./js/security.js"></script>
 <script src="./js/testimonials.js"></script>
 <script src="./js/numbers.js"></script>
+<script src="./js/services.js"></script>
+<script src="./js/ajax.js"></script>
+<script src="./js/burger.js"></script>
+
+
+
+<script src="./js/app.js"></script>
+<script src="./js/loader.js"></script>
 
 </html>

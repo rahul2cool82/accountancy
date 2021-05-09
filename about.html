@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+     <!--[if lt IE 9]> 
+    <script> document.createElement("app"); </script>
+    <![endif]-->
+    <script src='https://cdn.jsdelivr.net/gh/colxi/getEventListeners/src/getEventListeners.min.js'></script>
+    <script>
+        const getAllEventListeners = ( dom ) => {
+            return dom.eventListenerList;
+        }
+    </script>
+</head>
+<body style="overflow: hidden;">
+
+    <div class="loader select">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
+    </div>
+    
+    <app>
+        <!--    ################################    HEADER      ######################################-->
+        <div class="container">
+            <header class="header">
+                <img src="./images/verified.png" alt="">
+                <p>ISO 9001-2015 CERTIFIED SECURITY & PSARA CONSULTANT</p>
+            </header>
+        </div>
+        <!--    ################################    MENU        ######################################-->
+        <div class="container">
+            <div class="menu">
+                <a href="./index.html" class="menu__imageBox">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <div class="menu__container">
+                    <header class="menu__container--header">
+                        <div class="infoBox">
+                            <div class="infoBox__imageBox">
+                                <svg>
+                                    <use href="./svg/sprite.svg#icon-phone-call"></use>
+                                </svg>
+                            </div>
+                            <div class="infoBox__info">
+                                <h4>0124-4526577</h4>
+                                <p>Any quries? Call us.</p>
+                            </div>
+                        </div>
+                        <div class="infoBox">
+                            <div class="infoBox__imageBox">
+                                <svg>
+                                    <use href="./svg/sprite.svg#icon-map"></use>
+                                </svg>
+                            </div>
+                            <div class="infoBox__info">
+                                <h4>SECURE INDIA INFINITY SOLUTIONS</h4>
+                                <p>301/18, Civil Lines, Gurgaon, Haryana .</p>
+                            </div>
+                        </div>
+                        <a href="#" class="big-button" download="Broachure.pdf">Download Broachure</a>
+                    </header>
+                    <footer class="menu__container--footer">
+                        <a href="#">ABOUT</a>
+                        <a href="#">PSARA CONSULTANCY</a>
+                        <a href="#">INVESTIGATIONS WING</a>
+                        <a href="#">FACILITY MANAGEMENT</a>
+                        <a href="#">CONTACT US</a>
+                    </footer>
+                </div>
+                <div class="menu__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!--    ######################################      MOBILE NAVIGATION      ##############################################     -->
+        <div class="container">
+            <div class="mobnav">
+                <div class="mobnav__container">
+                    <a href="./index.html" class="mobnav__item">HOME</a>
+                    <a href="#" class="mobnav__item">ABOUT</a>
+                    <a href="#" class="mobnav__item">PSARA CONSULTANCY</a>
+                    <a href="#" class="mobnav__item">INVESTIGATIONS WING</a>
+                    <a href="#" class="mobnav__item">FACILITY MANAGEMENT</a>
+                    <a href="#" class="mobnav__item">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <!--    ################################    SOLUTIONS   ######################################-->
+        <div class="container">
+            <div class="solutions">
+                <h1>
+                    <u>SECURE INDIA </u> INFINITY SOLUTIONS
+                </h1>
+                <p>
+                    Secure India Infinity Solutions was established under the vibrant, competent & most capable command of Mr. Ronak and Capt. Suresh Kumar  who is the Promoter and Founder of the Company. Over the years, the company has shown immense growth and diversified its service portfolio successfully to meet the Security Industry and allied market requirements. On Pan India spread, we have teams of trained and professional staff that execute the company’s mission & vision and at the same time ensure the quality service delivery of our service portfolio.
+                </p>
+                <p>
+                    The Ex- Intelligence Bureau, Indian Army and Corporate Leaders having 20+ years of professional experience in their respective domains manage all the above service portfolios but their Operations are aligned with the Mission & Vision of the company. All the departments are heading in the same direction with complete focus to make the Secure India Infinity Solutions a market leader as an integrated service provider for all the requirements of the Security Industry.
+                </p>
+    
+                <div class="solutions__grid">
+                    <div class="solutions__grid--item">
+                        <h1>OUR <u>MISSION</u></h1>
+                        <h4>Providing innovative and requires solutions with best of skills</h4>
+                        <p>To develop innovative, reliable and technically superior security solutions which not only add true value to our business but also add to the longevity of our partnership with our employees & clients.</p>
+                    </div>
+                    <div class="solutions__grid--item">
+                        <h1>OUR <u>VISION</u></h1>
+                        <h4>Fulfilling clients’ requirements to have long term relationships</h4>
+                        <p>To emerge as a distinctive IT enabled Security Company across India by fulfilling our commitments and ensuring the desired security services delivery to our clients with state-of-the-art technology & most professional services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    ################################    TEAM        ######################################-->
+        <div class="container">
+            <div class="team">
+                <header class="team__header">
+                    <h1>Meet <u>the team</u></h1>
+                    <p>" Individuals can and do make a difference but it takes a team to excel "</p>
+                </header>
+                <div class="team__grid">
+
+                    <div class="team__member">
+                        <img src="./images/face2.jpg" alt="">
+                        <div class="team__member--info">
+                            <h4>Name Here</h4>
+                            <p>Occupation Here</p>
+                            <div class="team__member--socials">
+                                <a href="#">
+                                    <img src="./images/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/linkedin.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__member">
+                        <img src="./images/face2.jpg" alt="">
+                        <div class="team__member--info">
+                            <h4>Name Here</h4>
+                            <p>Occupation Here</p>
+                            <div class="team__member--socials">
+                                <a href="#">
+                                    <img src="./images/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/linkedin.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__member">
+                        <img src="./images/face2.jpg" alt="">
+                        <div class="team__member--info">
+                            <h4>Name Here</h4>
+                            <p>Occupation Here</p>
+                            <div class="team__member--socials">
+                                <a href="#">
+                                    <img src="./images/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/linkedin.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__member">
+                        <img src="./images/face2.jpg" alt="">
+                        <div class="team__member--info">
+                            <h4>Name Here</h4>
+                            <p>Occupation Here</p>
+                            <div class="team__member--socials">
+                                <a href="#">
+                                    <img src="./images/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/linkedin.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__member">
+                        <img src="./images/face2.jpg" alt="">
+                        <div class="team__member--info">
+                            <h4>Name Here</h4>
+                            <p>Occupation Here</p>
+                            <div class="team__member--socials">
+                                <a href="#">
+                                    <img src="./images/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/linkedin.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__member">
+                        <img src="./images/face2.jpg" alt="">
+                        <div class="team__member--info">
+                            <h4>Name Here</h4>
+                            <p>Occupation Here</p>
+                            <div class="team__member--socials">
+                                <a href="#">
+                                    <img src="./images/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/linkedin.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__member">
+                        <img src="./images/face2.jpg" alt="">
+                        <div class="team__member--info">
+                            <h4>Name Here</h4>
+                            <p>Occupation Here</p>
+                            <div class="team__member--socials">
+                                <a href="#">
+                                    <img src="./images/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/linkedin.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__member">
+                        <img src="./images/face2.jpg" alt="">
+                        <div class="team__member--info">
+                            <h4>Name Here</h4>
+                            <p>Occupation Here</p>
+                            <div class="team__member--socials">
+                                <a href="#">
+                                    <img src="./images/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/linkedin.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./images/twitter.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--    ################################    SERVICES    ######################################-->
+        <div class="container">
+            <div class="services">
+                <div class="services__imageBox">
+                    <img src="./images/slide1.jpg" alt="">
+                </div>
+                <div class="services__grid">
+
+                    <div class="services__service">
+                        <h1><span>95</span>%</h1>
+                        <div class="services__service--loader"> <div></div> </div>
+                        <h4>Security Services </h4>
+                        <p>Best In class IT enabled security company</p>
+                    </div>
+                    <div class="services__service">
+                        <h1><span>95</span>%</h1>
+                        <div class="services__service--loader"> <div></div> </div>
+                        <h4>Security Services </h4>
+                        <p>Best In class IT enabled security company</p>
+                    </div>
+                    <div class="services__service">
+                        <h1><span>95</span>%</h1>
+                        <div class="services__service--loader"> <div></div> </div>
+                        <h4>Security Services </h4>
+                        <p>Best In class IT enabled security company</p>
+                    </div>
+                    <div class="services__service">
+                        <h1><span>95</span>%</h1>
+                        <div class="services__service--loader"> <div></div> </div>
+                        <h4>Security Services </h4>
+                        <p>Best In class IT enabled security company</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--    ################################    NUMBERS   ########################################-->
+        <div class="container">
+            <div class="numbers white">
+                <header class="numbers__header">
+                    <h4><u>PSARA License</u> Consultancy Achievements</h4>
+                </header>
+                <div class="numbers__numberBox">
+
+                    <div class="number">
+                        <header class="number__header">
+                            <h1>450</h1><p>+</p>
+                        </header>
+                        <p>Clients Served</p>
+                    </div>
+                    
+                    <div class="number">
+                        <header class="number__header">
+                            <h1>1500</h1><p>+</p>
+                        </header>
+                        <p>Clients Served</p>
+                    </div>
+                    
+                    <div class="number">
+                        <header class="number__header">
+                            <h1>23</h1><p>+</p>
+                        </header>
+                        <p>Clients Served</p>
+                    </div>
+                    
+                    <div class="number">
+                        <header class="number__header">
+                            <h1>20</h1><p>+</p>
+                        </header>
+                        <p>Clients Served</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--    ################################    FOOTER   ########################################-->
+        <div class="container">
+            <footer class="footer">
+
+                <div class="footer__column">
+                    <h1>
+                        SECURE INDIA INFINITY SOLUTIONS
+                    </h1>
+                    <p>
+                        We Provide Professional PSARA License Consultancy in Delhi , Uttar Pradesh, Haryana, Punjab, Uttarakhand, Rajasthan, Himachal Pradesh, Chandigarh, Madhya Pradesh and in other States of India as well.
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h1>
+                        Useful Links
+                    </h1>
+                    <ul>
+                        <li><a href="#">ABOUT SECURE</a></li>
+                        <li><a href="#">INVESTIGATIONS WING</a></li>
+                        <li><a href="#">SECURITY SERVICES</a></li>
+                        <li><a href="#">FACILITY MANAGEMENT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h1>
+                        PSARA CONSULTANCY
+                    </h1>
+                    <ul>
+                        <li><a href="#">PSARA Act 2005</a></li>
+                        <li><a href="#">PSARA Clients</a></li>
+                        <li><a href="#">PSARA LICENSE APPLICATION</a></li>
+                        <li><a href="#">Registration & Certifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-map"></use></svg>
+                        <p>301/18, Civil Lines, Gurgaon, Haryana - 122001</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-mail"></use></svg>
+                        <p>write2ranarahul@gmail.com</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-globe"></use></svg>
+                        <p>www.moww.in</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-phone-call"></use></svg>
+                        <p>0124-4526577 | 8448818668</p>
+                    </div>
+                </div>
+
+                <div class="footer__copyrights">
+                    <p>&copy; All rights reserved to Company Name. Website designed & developed by <a href="https://moww.in">Moww In.</a></p>
+                </div>
+
+            </footer>
+        </div>
+    </app>
+</body>
+<script src="./js/slideshow.js"></script>
+<script src="./js/security.js"></script>
+<script src="./js/testimonials.js"></script>
+<script src="./js/numbers.js"></script>
+<script src="./js/services.js"></script>
+<script src="./js/ajax.js"></script>
+<script src="./js/burger.js"></script>
+
+
+
+<script src="./js/app.js"></script>
+<script src="./js/loader.js"></script>
+</html>

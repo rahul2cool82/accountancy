@@ -1,5 +1,12 @@
+var testimonialTimeout;
+
 const testimonials = () => {
     const buttons = document.querySelectorAll('.testimonials__buttons--button');
+
+    if ( buttons.length === 0 ){
+        return;
+    }
+
     Array.from( buttons ).forEach( (button, index) => {
         button.addEventListener( 'click', () => {
 
@@ -33,7 +40,6 @@ const testimonials = () => {
                 );
                 setTimeout( 
                     () => {
-                        
                         Array.from( domButtons ).forEach( (b) => { b.style = `` } );
                     }, timeout
                 );
@@ -46,7 +52,7 @@ const testimonials = () => {
     Array.from( testimonials ).forEach( ( testimonial ) => {
         const leftButton = testimonial.parentElement.parentElement.querySelector( '.testimonials__buttons--button.left' );
         function moveLeft(){
-            setTimeout(
+            testimonialTimeout = setTimeout(
                 () => {
                     leftButton.click();
                     moveLeft();
@@ -56,7 +62,17 @@ const testimonials = () => {
         moveLeft();
     } );
 
-
 }
 
-testimonials();
+const closeTestimonials = () => {
+    const buttons = document.querySelectorAll('.testimonials__buttons--button');
+    if ( buttons.length === 0 ){
+        return;
+    }
+
+    Array.from( buttons ).forEach( (button) => {
+        button.removeEventListener( 'click', getAllEventListeners( button ).click[0].listener );
+    } );
+
+    clearTimeout( testimonialTimeout );
+}
