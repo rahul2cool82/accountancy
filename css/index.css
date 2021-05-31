@@ -1141,3 +1141,247 @@ app {
       display: inline-block;
       font-size: 1.4rem;
       margin: .5rem 0; }
+
+.banner {
+  padding: 6vw;
+  background-image: url(./../images/b3.jpg);
+  margin-bottom: 3rem; }
+  .banner h1 {
+    text-align: center;
+    font-size: 4rem; }
+
+.tabs {
+  padding: 2rem 5vw;
+  position: relative;
+  width: 100%; }
+  .tabs__tiles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 48em) {
+      .tabs__tiles {
+        display: none; } }
+    .tabs__tiles p {
+      width: 30rem;
+      color: #fff;
+      background-color: #111c55;
+      cursor: pointer;
+      margin: 0 2rem 2rem;
+      padding: 2rem 3rem;
+      text-align: center;
+      border-radius: 1rem;
+      transition: .3s; }
+      .tabs__tiles p.select, .tabs__tiles p:hover {
+        background-color: var(--color--primary--blue); }
+  .tabs__tab {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    display: none;
+    max-width: 125rem;
+    margin: 0 auto;
+    align-items: center; }
+    .tabs__tab.select {
+      display: flex; }
+    @media only screen and (max-width: 48em) {
+      .tabs__tab {
+        display: flex !important; } }
+    .tabs__tab h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-family: "Lato", sans-serif;
+      position: relative;
+      padding-bottom: 2rem;
+      margin-top: 2rem; }
+      .tabs__tab h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 8rem;
+        background-color: yellow; }
+    .tabs__tab h4 {
+      font-size: 2rem;
+      text-align: center; }
+    .tabs__tab p {
+      margin-top: 2rem;
+      line-height: 1.5;
+      font-size: 1.6rem;
+      text-align: justify; }
+    .tabs__tab article {
+      margin: 2rem 0;
+      padding: 2rem;
+      border: 2px solid #111c55;
+      font-size: 2.4rem;
+      font-weight: 500;
+      text-align: justify; }
+    .tabs__tab--table {
+      max-width: 100rem;
+      overflow-x: auto;
+      width: 100%; }
+    .tabs__tab table {
+      align-self: center;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem; }
+      .tabs__tab table thead tr {
+        background-color: #E4E6EB; }
+        .tabs__tab table thead tr th {
+          padding: 1rem;
+          text-align: left;
+          border: 1px solid #ddd; }
+      .tabs__tab table tbody tr {
+        background-color: #fafafa; }
+        .tabs__tab table tbody tr:nth-child(2n + 1) {
+          background-color: #f5f5f5; }
+        .tabs__tab table tbody tr td {
+          border: 1px solid #ddd;
+          padding: 1rem; }
+          .tabs__tab table tbody tr td a {
+            display: flex;
+            color: #000; }
+            .tabs__tab table tbody tr td a img {
+              height: 1.6rem;
+              width: 1.6rem;
+              object-fit: contain;
+              margin-right: 1rem; }
+    .tabs__tab--grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 25rem);
+      justify-content: center;
+      grid-gap: 2rem; }
+      .tabs__tab--grid img {
+        box-shadow: 0 0 2px #111c55;
+        object-fit: cover;
+        width: 100%; }
+    .tabs__tab--flex {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .tabs__tab--flexItem {
+        margin: 2rem 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        width: 30rem; }
+        .tabs__tab--flexItem img {
+          height: 6rem;
+          width: 6rem;
+          border-radius: 5rem;
+          object-fit: scale-down;
+          object-position: center center;
+          transition: .3s; }
+        .tabs__tab--flexItem:hover img {
+          background-color: #dcdcff; }
+        .tabs__tab--flexItem p {
+          color: #4a4aff;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          word-spacing: 3px;
+          margin-top: 0; }
+
+.contact {
+  margin: auto;
+  padding: 5vw;
+  display: grid;
+  grid-template-columns: minmax(40rem, 1fr) 50rem;
+  grid-gap: 4rem; }
+  @media only screen and (max-width: 64em) {
+    .contact {
+      grid-template-columns: 1fr; } }
+  .contact__details {
+    width: 100%;
+    padding: 4rem;
+    border: 1px solid #111c55; }
+    .contact__details h4 {
+      color: #000;
+      font-size: 2.4rem;
+      font-family: "Lato", sans-serif; }
+      .contact__details h4 u {
+        text-decoration-color: yellow; }
+    .contact__details p {
+      line-height: 2;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      font-family: "Lato", sans-serif;
+      width: 100%; }
+      .contact__details p span {
+        font-weight: bold;
+        margin-right: .5rem; }
+    .contact__details h1 {
+      font-size: 3.5rem;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      margin-top: 2rem; }
+  .contact__grid {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap; }
+    .contact__grid--item {
+      padding: 2rem;
+      width: 50%;
+      padding-left: 0;
+      padding-right: 3rem; }
+      @media only screen and (max-width: 28.125em) {
+        .contact__grid--item {
+          width: 100%; } }
+      .contact__grid--item h6 {
+        font-size: 2rem;
+        font-family: "Lato", sans-serif;
+        margin-bottom: 1rem; }
+      .contact__grid--item p {
+        margin: 0; }
+  .contact__form {
+    width: 100%;
+    background-color: #0f205e;
+    color: #FFF;
+    padding: 3rem;
+    display: table;
+    clear: both;
+    height: 100%; }
+    .contact__form h4 {
+      font-size: 3.5rem;
+      font-family: "Lato", sans-serif;
+      margin-bottom: 2rem;
+      width: 100%; }
+    .contact__form input {
+      width: 48%;
+      float: left;
+      padding: 1rem 1.2rem;
+      border: 0;
+      outline: none;
+      font-family: "Lato", sans-serif; }
+      .contact__form input:focus, .contact__form input:hover {
+        border: 0;
+        outline: none; }
+      .contact__form input:last-of-type {
+        margin-left: 4%; }
+    .contact__form select {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 1rem 1.2rem;
+      border: 0; }
+      .contact__form select:focus, .contact__form select:hover {
+        border: 0;
+        outline: none; }
+    .contact__form textarea {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 1rem 1.2rem;
+      border: 0;
+      outline: none;
+      font-family: "Lato", sans-serif;
+      height: 8rem; }
+      .contact__form textarea:focus, .contact__form textarea:hover {
+        border: 0;
+        outline: none; }
+    .contact__form button {
+      margin-top: 2rem;
+      cursor: pointer; }
