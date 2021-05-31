@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+     <!--[if lt IE 9]> 
+    <script> document.createElement("app"); </script>
+    <![endif]-->
+    <script src='https://cdn.jsdelivr.net/gh/colxi/getEventListeners/src/getEventListeners.min.js'></script>
+    <script>
+        const getAllEventListeners = ( dom ) => {
+            return dom.eventListenerList;
+        }
+    </script>
+</head>
+<body style="overflow: hidden;">
+    <div class="loader select">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
+    </div>
+    <app>
+        <!--    ################################    HEADER      ######################################-->
+        <div class="container">
+            <header class="header">
+                <img src="./images/verified.png" alt="">
+                <p>ISO 9001-2015 CERTIFIED SECURITY & PSARA CONSULTANT</p>
+            </header>
+        </div>
+        <!--    ################################    MENU        ######################################-->
+        <div class="container">
+            <div class="menu">
+                <a href="./index.html" class="menu__imageBox">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <div class="menu__container">
+                    <header class="menu__container--header">
+                        <div class="infoBox">
+                            <div class="infoBox__imageBox">
+                                <svg>
+                                    <use href="./svg/sprite.svg#icon-phone-call"></use>
+                                </svg>
+                            </div>
+                            <div class="infoBox__info">
+                                <h4>0124-4526577</h4>
+                                <p>Any quries? Call us.</p>
+                            </div>
+                        </div>
+                        <div class="infoBox">
+                            <div class="infoBox__imageBox">
+                                <svg>
+                                    <use href="./svg/sprite.svg#icon-map"></use>
+                                </svg>
+                            </div>
+                            <div class="infoBox__info">
+                                <h4>SECURE INDIA INFINITY SOLUTIONS</h4>
+                                <p>301/18, Civil Lines, Gurgaon, Haryana .</p>
+                            </div>
+                        </div>
+                        <a href="#" class="big-button" download="Broachure.pdf">Download Broachure</a>
+                    </header>
+                    <footer class="menu__container--footer">
+                        <a href="./about.html">ABOUT</a>
+                        <a href="./psara.html">PSARA CONSULTANCY</a>
+                        <a href="#">INVESTIGATIONS WING</a>
+                        <a href="#">FACILITY MANAGEMENT</a>
+                        <a href="#">CONTACT US</a>
+                    </footer>
+                </div>
+                <div class="menu__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!--    ######################################      MOBILE NAVIGATION      ##############################################     -->
+        <div class="container">
+            <div class="mobnav">
+                <div class="mobnav__container">
+                    <a href="./index.html" class="mobnav__item">HOME</a>
+                    <a href="about.html" class="mobnav__item">ABOUT</a>
+                    <a href="./psara.html" class="mobnav__item">PSARA CONSULTANCY</a>
+                    <a href="#" class="mobnav__item">INVESTIGATIONS WING</a>
+                    <a href="#" class="mobnav__item">FACILITY MANAGEMENT</a>
+                    <a href="#" class="mobnav__item">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+
+        <!--    ################################    BANNER       ######################################-->
+        <div class="container">
+            <div class="banner">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+
+        <!--    ################################    CONTACT       ######################################-->
+        <div class="container">
+            <div class="contact">
+                <div class="contact__details">
+                    <h4><u>CORPORATE </u> OFFICE</h4>
+                    <p>301/18, Civil Lines, Gurgaon, Haryana - 122001</p>
+                    <h1>OUR BRANCHES</h1>
+                    <div class="contact__grid">
+                        <div class="contact__grid--item">
+                            <h6>Karnataka</h6>
+                            <p>Office No. 130 Artha Grihastha Layout Malur, Alambadi, Kolar,<br>Bangalore - 563160</p>
+                        </div>
+                        <div class="contact__grid--item">
+                            <h6>Karnataka</h6>
+                            <p>Office No. 130 Artha Grihastha Layout Malur, Alambadi, Kolar,<br>Bangalore - 563160</p>
+                        </div>
+                        <div class="contact__grid--item">
+                            <h6>Karnataka</h6>
+                            <p>Office No. 130 Artha Grihastha Layout Malur, Alambadi, Kolar,<br>Bangalore - 563160</p>
+                        </div>
+                        <div class="contact__grid--item">
+                            <h6>Karnataka</h6>
+                            <p>Office No. 130 Artha Grihastha Layout Malur, Alambadi, Kolar,<br>Bangalore - 563160</p>
+                        </div>
+                        <p><span>Mail Us at:</span> corporate@secureindiagroup.com</p>
+                        <p><span>Toll Free:</span> 0124-4526577</p>
+
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <h4>CONTACT US</h4>
+                    <input type="text" name="name" placeholder="Name*">
+                    <input type="email" name="email" placeholder="Email*">
+                    <select name="subject">
+                        <option value="Subject 1">Subject 1</option>
+                    </select>
+                    <textarea name="message" placeholder="Message..."></textarea>
+                    <button class="button">SEND NOW</button>
+                </div>
+                <div class="contact__map">
+
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!--    ################################    FOOTER   ########################################-->
+        <div class="container">
+            <footer class="footer">
+
+                <div class="footer__column">
+                    <h1>
+                        SECURE INDIA INFINITY SOLUTIONS
+                    </h1>
+                    <p>
+                        We Provide Professional PSARA License Consultancy in Delhi , Uttar Pradesh, Haryana, Punjab, Uttarakhand, Rajasthan, Himachal Pradesh, Chandigarh, Madhya Pradesh and in other States of India as well.
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h1>
+                        Useful Links
+                    </h1>
+                    <ul>
+                        <li><a href="./about.html">ABOUT SECURE</a></li>
+                        <li><a href="#">INVESTIGATIONS WING</a></li>
+                        <li><a href="#">SECURITY SERVICES</a></li>
+                        <li><a href="#">FACILITY MANAGEMENT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h1>
+                        PSARA CONSULTANCY
+                    </h1>
+                    <ul>
+                        <li><a href="#">PSARA Act 2005</a></li>
+                        <li><a href="#">PSARA Clients</a></li>
+                        <li><a href="#">PSARA LICENSE APPLICATION</a></li>
+                        <li><a href="#">Registration & Certifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-map"></use></svg>
+                        <p>301/18, Civil Lines, Gurgaon, Haryana - 122001</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-mail"></use></svg>
+                        <p>write2ranarahul@gmail.com</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-globe"></use></svg>
+                        <p>www.moww.in</p>
+                    </div>
+
+                    <div class="footer__column--infoBox">
+                        <svg><use href="./svg/sprite.svg#icon-phone-call"></use></svg>
+                        <p>0124-4526577 | 8448818668</p>
+                    </div>
+                </div>
+
+                <div class="footer__copyrights">
+                    <p>&copy; All rights reserved to Company Name. Website designed & developed by <a href="https://moww.in">Moww In.</a></p>
+                </div>
+
+            </footer>
+        </div>
+
+
+    </app>
+</body>
+<script src="./js/slideshow.js"></script>
+<script src="./js/security.js"></script>
+<script src="./js/testimonials.js"></script>
+<script src="./js/numbers.js"></script>
+<script src="./js/services.js"></script>
+<script src="./js/ajax.js"></script>
+<script src="./js/burger.js"></script>
+<script src="./js/tabs.js"></script>
+
+
+
+<script src="./js/app.js"></script>
+<script src="./js/loader.js"></script>
+</html>
