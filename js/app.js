@@ -1,4 +1,4 @@
-const preDomain = window.location.origin + '/';
+const preDomain = window.location.origin + '/accountancy/';
 const startApp = () => {
     settleSlideShow();
     numbers();
