@@ -839,6 +839,100 @@ app {
   100% {
     transform: translateX(100%); } }
 
+.videocontainer {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 10rem);
+  background-color: red;
+  overflow: hidden;
+  margin-bottom: 2rem; }
+  .videocontainer__wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden; }
+  .videocontainer__scroller {
+    width: 100%; }
+
+.videobox {
+  position: relative;
+  --height: 100%;
+  --width: 100%;
+  height: var(--height);
+  width: var(--width);
+  border: 2px solid #000;
+  background-color: #ccc; }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #000000bb;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center; }
+  .popup.select {
+    display: flex; }
+  .popup__form {
+    max-width: 40rem;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    position: relative; }
+    .popup__form h1 {
+      text-align: center;
+      margin: 2rem;
+      margin-top: 0; }
+    .popup__form p {
+      margin: 0 0 2rem;
+      text-align: center; }
+    .popup__form button {
+      cursor: pointer; }
+  .popup__item {
+    margin-bottom: 1.4rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #111c55;
+    padding: .5rem;
+    position: relative; }
+    .popup__item p {
+      --size: 1.2rem;
+      position: absolute;
+      font-size: var(--size);
+      top: calc( var(--size) * -1/2);
+      background-color: #fff;
+      padding: 0 1rem;
+      height: var(--size);
+      color: #ccc; }
+    .popup__item input {
+      border: 0;
+      padding: .75rem;
+      width: 100%;
+      font-size: 1.6rem;
+      font-family: "Lato", sans-serif; }
+      .popup__item input:focus, .popup__item input:hover {
+        border: 0;
+        outline: none; }
+  .popup__cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff7f43;
+    color: #fff;
+    cursor: pointer; }
+
 .big-button {
   display: block;
   width: max-content;
@@ -1241,10 +1335,13 @@ app {
         .tabs__tab table tbody tr td {
           border: 1px solid #ddd;
           padding: 1rem; }
-          .tabs__tab table tbody tr td a {
+          .tabs__tab table tbody tr td p {
             display: flex;
-            color: #000; }
-            .tabs__tab table tbody tr td a img {
+            color: #000;
+            margin-top: 0;
+            line-height: 1;
+            cursor: pointer; }
+            .tabs__tab table tbody tr td p img {
               height: 1.6rem;
               width: 1.6rem;
               object-fit: contain;
