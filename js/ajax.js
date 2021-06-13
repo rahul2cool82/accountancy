@@ -1,3 +1,5 @@
+const emailAJAX = 'https://yu.adhyay.co.in/accountant/index.php';
+
 const ajaxPagination = () => {
     const anchors = document.querySelectorAll('a');
     Array.from( anchors ).forEach( ( a ) => {

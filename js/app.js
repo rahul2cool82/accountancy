@@ -1,4 +1,4 @@
-const preDomain = window.location.origin + '/accountancy/';
+const preDomain = window.location.origin + '';
 const startApp = () => {
     settleSlideShow();
     numbers();
@@ -8,6 +8,7 @@ const startApp = () => {
     ajaxPagination();
     burger();
     tabs();
+    showPopup();
 }
 
 const closeApp = () => {
@@ -18,4 +19,5 @@ const closeApp = () => {
     closeServiceScrolling();
     closeBurger();
     closeTabs();
+    closePopup();
 }

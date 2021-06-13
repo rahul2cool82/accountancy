@@ -1,6 +1,9 @@
 const burger = () => {
 
     const burger = document.querySelector('.menu__burger');
+    if ( !burger ){
+        return;
+    }
     const mobnav = document.querySelector('.mobnav');
     const mobnavHeight = mobnav.scrollHeight;
 
@@ -39,6 +42,9 @@ const burger = () => {
 
 const closeBurger = () => {
     const burger = document.querySelector('.menu__burger');
+    if ( !burger ){
+        return;
+    }
     burger.removeEventListener( 'click', getAllEventListeners( burger ).click[0].listener );
     const mobnavDrops = document.querySelectorAll('.mobnav__item.drop');
     Array.from( mobnavDrops ).forEach( ( drop ) => {
